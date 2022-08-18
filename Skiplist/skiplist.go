@@ -35,7 +35,7 @@ func (skl Skiplist[K, V]) findSteps(n *node[K, V], key K) []*node[K, V] {
 	for frontier != nil {
 		if key < frontier.grnd.key {
 			// The frontier has gone beyond the target key, so we have
-			// at this level.
+			// a result at this level.
 			break
 		}
 
